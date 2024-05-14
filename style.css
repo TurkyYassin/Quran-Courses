@@ -220,6 +220,57 @@
     #navbar .start a:hover{
       background: #F84D07;
     }
+    /* Responsive Start */
+  @media (max-width: 1024px) {
+    #navbar img {
+      margin-left: 20px;
+    }
+    #navbar .search{
+      display: none;
+    }
+  
+    #navbar ul {
+      margin-right: 20px;
+    }
+  
+    #navbar ul li a {
+      padding: 10px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    #navbar {
+      flex-direction: column;
+    }
+
+    #navbar img {
+      margin-bottom: 20px;
+      margin-top: 20px;
+      margin-left: -200px;
+    }
+
+    #navbar .search{
+      display: none;
+    }
+    #navbar .login{
+      /* display: none; */
+      position: absolute;
+      top: 30px;
+      right: 100px;
+    }
+    #navbar .start{
+      display: none;
+    }
+  
+    #navbar ul {
+      margin-right: 40px;
+    }
+  
+    #navbar ul li a {
+      padding: 10px;
+      z-index: 999;
+    }
+  }
   
   /* Header End */
 
@@ -472,6 +523,65 @@
   }
   
   /* Offers Section end */
+   /* Responsive Start */
+   @media (max-width: 1024px) {
+    .categories{
+      margin-left: -150px;
+    }
+    .categories li .dropdown{
+      width: 160px;
+      top: -50px;
+      left: -115px;
+      padding: 5px 10px;
+      background: #f1f0f0;
+      position: absolute;
+      z-index: 999;
+      display: none;
+      border-radius: 5px;
+    }
+    .categories li .dropdown2{
+      width: 120px;
+      background: #f1f0f0;
+      position: absolute;
+      top: -50px;
+      left: 90px;
+      z-index: 999;
+      display: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    .categories li .dropdown3{
+      width: 120px;
+      background: #f1f0f0;
+      position: absolute;
+      top: -50px;
+      left: 260px;
+      z-index: 999;
+      display: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    .categories li .dropdown4{
+      width: 110px;
+      background: #f1f0f0;
+      position: absolute;
+      top: -50px;
+      left: 425px;
+      z-index: 999;
+      display: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    #offers .offers-items{
+      display: grid;
+      grid-template-columns: repeat(2,1fr) ;
+      margin-left: -100px;
+      margin-top: -100px;
+    }
+    #offers .offers-items .box{
+      height: 20vh;
+    }
+  }
 
     /* course end */
 
@@ -578,13 +688,12 @@
 
 
 /*responsive*/
-@media(max-width: 767px){
+@media(max-width: 1024px){
   .footer-col{
-    width: 50%;
     margin-bottom: 30px;
 }
 }
-@media(max-width: 574px){
+@media(max-width: 600px){
   .footer-col{
     width: 100%;
 } 
